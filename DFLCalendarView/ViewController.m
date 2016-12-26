@@ -18,11 +18,11 @@
     [super viewDidLoad];
     DFLCalendarView *view = [[DFLCalendarView alloc] initWithFrame:CGRectMake(10, 64, self.view.frame.size.width - 20, 0)];
     view.date = [NSDate date];
-    view.keyValueDic = @{@"2" : @"+3",
-                         @"6" : @"+2",
-                         @"25" : @"+15",
-                         @"26" : @"+20",
-                         @"300" : @"+10",};
+//    view.keyValueDic = @{@"2" : @"+3",
+//                         @"6" : @"+2",
+//                         @"25" : @"+15",
+//                         @"26" : @"+20",
+//                         @"300" : @"+10",};
     [view selectDateCallBack:^(BOOL isSelected, NSString *month) {
         if (!isSelected) {
             NSLog(@">>>>%@",month);
